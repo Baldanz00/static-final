@@ -1,0 +1,21 @@
+Lezione del 17.07
+ATTRIBUTI E METODI STATICI
+
+Una classe definisce lo stato interno e suoi metodi , per l'oggetto che verrà creato con il new.
+Ogni oggetto creato avrà uno scope a sè stante in cui esiste il this.
+
+In aggiunta una classe può definire attributi e metodi che non riguardano il singolo oggetto, ma tutta la classe.
+Questi metodi, con la kw static , appartengono allo scope di classe.
+
+ATTRIBUTI STATIC-->
+Quando fai un componente static, viene definito e occupato uno spazio di memoria subito per loro,e poi non possono essere 
+cambiati, perchè ce nè una sola copia... quindi ogni volta che le letture vanno ad accedere a quell'area di memoria, tutte vedranno 
+solo quella senza poter cambiarne il contemuto. --> variabili di classe.
+
+METODI STATIC -->
+I metodi d'istanza appartengono all'oggetto (get e set).
+I metodi static non hanno bisogno dell'istanza, perchè il suo comportamento non dipende dall'istanza.
+
+Se io cambio il dato Static, tutto ciò che viene letto dopo e scritto dopo, avrà quell'attributo static uguale per tutti.
+
+Di solito le configurazioni delle app sono statiche, perchè ce ne deve essere una sola versione. 
