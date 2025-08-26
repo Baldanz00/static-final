@@ -33,5 +33,12 @@ public class App {
          */
         Utility.increment();
         Utility.leggiConteggio(); //posso richiamare questi metodi
+
+        //--> Equals Custom
+        Prova prova1 = new Prova();
+        Prova prova2 = new Prova();
+        System.out.println(prova1.equals(prova2));//false
+        prova2 = prova1; //---> sto dicendo che prova2 punta alla stessa cella di memoria di prova1
+        System.out.println(prova1.equals(prova2));//true
     }
 }

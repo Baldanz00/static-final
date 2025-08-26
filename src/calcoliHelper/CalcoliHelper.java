@@ -2,6 +2,11 @@ package calcoliHelper;
 
 public class CalcoliHelper {
 
+    //FINAL
+    public final String nome_classe = "CalcoliHelper";
+    //si associa a classi statiche, per creare un elemento accessibile ma non modificabile
+    public static final double PI = 3.14; //accessibile senza bisogno che ci sia un istanza, ma non modificabile.
+
     /*
      * - somma di due numeri interi;
      * - somma di due numeri double;
@@ -16,7 +21,7 @@ public class CalcoliHelper {
      * - massimo tra due numeri interi;
      * - massimo tra due numeri double;
      */
-    public static int somma(int a, int b){
+    public static final int somma(int a, int b){
         return a + b;
     }
     public static double somma(double a, double b){

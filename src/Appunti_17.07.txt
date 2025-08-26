@@ -63,3 +63,12 @@ RoundingMode
 RoundingMode
 
 RoundingMode. valueOf(Class<T> enumClass, String na...
+
+------------------------------------------------------
+
+---> FINAL : modificatore di non accesso (UPPERCASE_SNACKCASE)
+-> variabile final : voglio creare una costante , dato il primo valore non può cambiare mai.
+-> metodo final : voglio impedire l'overriding 
+-> classe final : voglio impedire l'ereditarietà , non ci sarà la sua sottoclasse
+
+Il concetto è proteggere il contenuto perchè non sia cambiato.
