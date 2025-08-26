@@ -1,4 +1,13 @@
 Lezione del 17.07
+Recap:
+-> EREDITARIETA’: una classe ha la capacità di ereditare attributi e metodi di un’altra classe.
+->INCAPSULAMENTO: possibilità di permettere l’accesso ad attributi e metodi che hanno visibilità privata. ->proteggere lo stato interno.
+->POLIMORFISMO:capacità di , in contesto di ereditarietà, avere più metodi con lo stesso nome ma che fanno cose diverse a seconda dell’implementazione.
+
+————————————
+Overload: metodi con stesso nome ma con parametri diversi di tipo o numeri.
+-------------
+
 ATTRIBUTI E METODI STATICI
 
 Una classe definisce lo stato interno e suoi metodi , per l'oggetto che verrà creato con il new.
@@ -19,3 +28,38 @@ I metodi static non hanno bisogno dell'istanza, perchè il suo comportamento non
 Se io cambio il dato Static, tutto ciò che viene letto dopo e scritto dopo, avrà quell'attributo static uguale per tutti.
 
 Di solito le configurazioni delle app sono statiche, perchè ce ne deve essere una sola versione. 
+
+BigDecimal -> si usa per evitare errori di calcolo.... vuole sapere di quante cifre deve arrotondare dopo la virgola,
+nel caso di una divisione, e anche che metodo usare per arrotondare:
+
+RoundingMode. CEILING
+Rounding... ›
+
+= RoundingMode. DOWN
+RoundingMode
+
+•* RoundingMode. FLOOR
+RoundingMode
+만
+RoundingMode. HALF_DOWN -----> per eccesso
+RoundingMode
+만
+RoundingMode. HALF_EVEN ---->tronco
+RoundingMode
+
+= RoundingMode. HALF_UP ---> per eccesso
+RoundingMode
+
+RoundingMode. UNNECESSARY --> non necessario, ma può dare errore
+RoundingMode
+
+RoundingMode. UP
+RoundingMode
+
+RoundingMode. valueOf (int rm)
+RoundingMode
+
+• RoundingMode. valuef(String name)
+RoundingMode
+
+RoundingMode. valueOf(Class<T> enumClass, String na...
